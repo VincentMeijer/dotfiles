@@ -15,6 +15,7 @@ start_jupyter() {
     fi
 }
 
+# Stop jupyter notebook server
 stop_jupyter() {
     pgrep -f "jupyter" | xargs kill > /dev/null 2>&1 
 }
