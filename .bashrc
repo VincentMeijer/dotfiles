@@ -1,5 +1,5 @@
 # Adjust prompt
-PS1="(${CONDA_DEFAULT_ENV}) \e[01;32m\u\e[0m - \W > "
+Prmeijer@tud502031.sitecom.routerS1="(${CONDA_DEFAULT_ENV}) \e[01;32m\u\e[0m - \W > "
 
 # Install currently active conda environment as jupyter kernel
 install_jupyter_kernel() {
@@ -17,5 +17,5 @@ start_jupyter() {
 
 # Stop jupyter notebook server
 stop_jupyter() {
-    pgrep -f "jupyter" | xargs kill > /dev/null 2>&1 
+    pgrep -f "jupyter-notebook" | xargs kill > /dev/null 2>&1 
 }
